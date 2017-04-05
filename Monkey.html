@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+			.container{
+				width: 500px;
+				height: 800px;
+				background: url(img3/bg.png);
+				margin: 0 auto;
+				position: relative;
+			}
+			.monkey1{
+				width: 150px;
+				height: 174px;
+				position: absolute;
+				left: 34%;
+				top: 30%;
+				-webkit-animation: hou .5s infinite;
+				background: url(img3/houzi1.png);
+				/*display: none;*/
+			
+				
+			}
+			@-webkit-keyframes hou{
+				0%{
+					background: url(img3/houzi1.png);
+				}
+				50%{
+					background: url(img3/hou2.png);
+				}
+				100%{
+					background: url(img3/hou3.png);
+				}
+			}
+			
+			.ibox{
+			
+				width:200px;height:20px;background:black;
+				border-radius: 10px;
+				position: absolute;
+				left: 30%;
+				top: 53%;
+			}
+			.isL{
+				color:#fff;font-size:12px;line-height:20px;width:0px;height:20px;background:#FFE43E;text-align:center;position: absolute;
+				border-radius: 10px;
+				
+			}
+		
+			.spanL{
+				color: #ffe43e;
+					position: absolute;
+					left: 41%;
+				top: 60%;
+			}
+			.body2{
+				
+				width: 100%;
+				height: 100%;
+				/*background: url(img3/p2-西游知多少H5.png);*/
+				display: none;
+				position: relative;
+			}
+			.monkey4{
+				position: absolute;
+				/*background: url(img3/houzi4.png);*/
+				width: 200px;
+				height:208px;
+				left: 5%;
+				bottom: 3%;
+			}
+			.img1{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				cursor:pointer;
+				z-index: 10;
+			}
+			.body3{
+				width: 100%;
+				height: 100%;
+				position: relative;	
+				background: url(img3/beijfg.png);
+				overflow: hidden;
+				display: none;
+			}
+			.bobo{
+				position: absolute;
+				bottom: 0;
+				animation: bobobo linear  2.5s forwards;
+			}
+			 @-webkit-keyframes bobobo{
+			 	from{bottom: -200px;}
+			 	to{bottom: 0;}
+			 }
+			.wuda{
+				position: absolute;	
+				left: 50px;
+				top: 220px;
+				animation: wudas ease-in  1.5s forwards;
+			}
+			@-webkit-keyframes wudas{
+				0%{
+					transform: scale(0.5,0.5);
+				}
+				50%{
+					transform: scale(1.1,1.1);
+				}
+				100%{
+					transform: scale(1,1);
+				}
+			}
+			.gogoog{
+				position: absolute;
+				bottom: 30px;
+				left: 210px;
+				cursor: pointer;
+			
+				animation: gos  ease-in-out 2s forwards;
+			}
+			@-webkit-keyframes gos{
+				from{bottom: -100px;}
+				to{
+					bottom: 30px;
+				}
+			}
+			.gogoog:hover{
+					box-shadow: 0 0 50px dodgerblue;
+					width: 100px;
+					height: 100px;
+			}
+			.heima{
+				position: absolute;
+				left: 50px;
+				top: 480px;
+				animation: heimas linear 1.5s forwards;
+				
+			}
+		
+		@-webkit-keyframes heimas{
+			0%{
+				transform: scale(0.5,0.5);
+			}
+			100%{
+				transform: scale(1,1);
+			}
+		}
+			.ko{
+				position: absolute;
+				animation: koo ease-out  1.5s forwards;
+			}
+			@-webkit-keyframes koo{
+				from{left: -300px;}
+				to{left: 0;}
+			}
+			.guan{
+				position: absolute;
+				top: 0;
+				animation: guans linear  1s forwards;
+			}
+			@-webkit-keyframes guans{
+			from{top: -200px;}
+				to{top:0}
+			}
+			.body4{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background: url(img3/bg.png);
+				display: none;
+			}
+			.body4_a{
+				width: 460px;
+				height: 93px;
+				background: url(img3/a.png);
+				position: absolute;
+				left: 20px;
+				top: 340px;
+			}
+			.body4_a1,.body4_b1,.body4_c1,.body4_d1{
+				position: absolute;
+				width: 300px;
+				height: 60px;
+				/*background: gold;*/
+				left: 90px;
+				top: 10px;
+				text-align: center;
+				line-height: 60px;
+				font-size:30px ;
+				cursor: copy;
+			}
+				.body4_b{
+				width: 460px;
+				height: 93px;
+				background: url(img3/b.png);
+				position: absolute;
+				left: 20px;
+				top: 440px;
+			}
+				.body4_c{
+				width: 460px;
+				height: 93px;
+				background: url(img3/c.png);
+				position: absolute;
+				left: 20px;
+				top: 542px;
+			}
+				.body4_d{
+				width: 460px;
+				height: 93px;
+				background:url(img3/d.png);
+				position: absolute;
+				left: 20px;
+				top: 642px;
+			}
+			.question{
+				width: 460px;
+				height: 122px;
+				position: absolute;
+				left: 20px;
+				top: 60px;
+				background: url(img3/q.png);
+			}
+			.answer{
+				width: 320px;
+				height: 80px;
+				/*background: cyan;*/
+				left: 90px;
+				position: absolute;
+				top: 15px;
+				text-align: center;
+				line-height: 80px;
+				font-size: 16px;
+				
+			}
+			.shan{
+				position: absolute;
+				top: 180px;
+				left: 200px;
+				width: 120px;
+				height: 120px;
+			}
+		 .yes{
+		 	width: 40px;
+		 	height: 40px;
+		 	background: white;
+		 	position: absolute;
+		 	right: 20px;
+		 	top: 20px;
+		 	
+		 }
+		 .dui{
+		 	background: url(img3/gou.png);
+		 
+		 }
+		 .cuo{
+		 	background: url(img3/ca.png);
+		 		 	
+		 }
+		 .body5{
+		 	width: 100%;
+		 	height: 100%;
+		 	background: url(img3/choujiang.png);
+		 	position: relative;
+		 	display: none;
+		 }
+		 .ku{
+		 	position: absolute;
+		 	left: 130px;
+		 	top: 320px;
+		 }
+		 .sumcount{
+		 	position: absolute;
+		 	font-size: 30px;
+		 	left: 110px;
+		 	top: 280px;
+		 	
+		 }
+		 .spancount{
+		 	color: #FFE43E;
+		 }
+		 .again,.again1,.again2,.again3,.again4{
+		 	position: absolute;
+		 	bottom: 0;
+		 	left: 20px;
+		 	z-index: 4;
+		 		cursor: pointer;
+		 }
+		 .help,.chou,.bachou,.chouW,.chouW1{
+		 	position: absolute;
+		 	bottom: 0;
+		 	right: 20px;
+		 	z-index: 4;
+		 		cursor: pointer;
+		 }
+		 .body6{
+		 	width: 100%;
+		 	height: 100%;
+		 	background: url(img3/choujiang.png);
+		 	position: relative;
+		 	display: none;
+		 }
+		 .gongxi{
+		 	position: absolute;
+		 	top: 150px;
+		 	left: 70px;
+		 	display: none;
+		 	 animation: gu linear 1s forwards;
+		 }
+		 @-webkit-keyframes gu{
+		 	0%{
+		 		transform: scale(0.5,0.5);
+		 	}
+		 	100%{
+		 		transform: scale(1,1);
+		 	}
+		 }
+		 .dese,.dese1,.dese2,.dese3{
+		 	position: absolute;	
+		 	bottom: 0;
+		 	left: 150px;
+		 	cursor: pointer;
+	
+		 }
+		 .dese1{
+		 	height: 200px;
+		 }
+		 .bo,.bo1,.bo2,.bobody{
+		 	position: absolute;
+		 	bottom: 0;
+		 	width: 500px;
+		 	height: 150px;
+		 	background: url(img3/bo.png);
+		 }
+		 .baji{
+		 	position: absolute;
+		 	top: 270px;
+		 	left: 60px;
+		 }
+		 .bajisum{
+		 	top: 234px;
+		 }
+		 .body7{
+		 	width: 100%;	
+		 	height: 100%;
+		 	position: relative;
+		 	background: url(img3/choujiang.png);
+		 		display: none;
+		 		 }
+		 		 .zhongji{
+		 		 	position: absolute;
+		 		 	left: 50px;
+		 		 	top: 200px;
+		 		 }
+		 		 .body8{
+		 		 	width: 100%;
+		 		 	height: 100%;
+		 		 	background: url(img3/choujiang.png);
+		 		 	position: relative;
+		 		 	display: none;
+		 		 }
+		 		 .you15,.chou5{
+		 		 	position: absolute;
+		 		 	left: 110px;
+		 		 	top: 240px;
+		 		 }
+		 		 
+		 		.body9{
+		 		 	width: 100%;
+		 		 	height: 100%;
+		 		 	background: url(img3/choujiang.png);
+		 		 	position: relative;
+		 		 	display: none;
+		 		 }
+		 		.kui{
+		 			position: absolute;
+		 			top: 30px;
+		 			
+		 		}
+		 		.zhi{
+		 			position: absolute;
+		 			top: 150px;
+		 		}
+		 		.dati{
+		 			position: absolute;	
+		 			bottom: 120px;
+		 			right: 100px;
+		 		}
+		 		.body2 img{
+		 			animation: monkeyani   1S ease-in-out forwards ;
+		 		}
+		 		@-webkit-keyframes monkeyani {
+		 			0%{
+		 				transform: scale(0,0);
+		 			}
+		 			50%{
+		 				transform: scale(1.1,1.1);
+		 			}
+		 			100%{
+		 				transform: scale(1,1);
+		 			}
+		 		}
+		 		.index{
+		 			position: absolute;
+		 			width: 40px;
+		 			height: 30px;
+		 			/*background: darkcyan;*/
+		 			bottom: 20px;
+		 			left: 26px;
+		 			line-height: 30px;
+		 			text-align: center;
+		 		}
+		 		.input{
+		 			position: absolute;
+		 			left: 176px;
+		 			top: 345px;
+		 			display: none;
+		 		}
+		 		.input input{
+		 			width: 160px;
+		 			height: 30px;
+		 			outline: none;
+		 			/*border: none;*/
+		 		}
+		</style>
+	</head>
+	<body>
+		
+		
+  <div class="container">
+  	 <div class="body1">
+  	 	  <div class="monkey1"></div>
+  	 	  <div class="ibox">
+  	 	     <div class="isL"></div>
+  	 	  </div>
+  	 
+  	 	   <span class="spanL">Loading...</span>
+  	 </div>
+  	 <div class="body2">
+  	     <img  class="monkey4"  src="img3/houzi4.png"/>
+  	     <img class="img1" src="img3/get.png"/>
+  	     <img class="bobody" src="img3/bo.png"/>
+  	     <img class="yellow" src="img3/huang.png"/>
+  	     <img  class="kui" src="img3/kui.png"/>
+  	     <img  class="zhi" src="img3/zhi.png"/>
+  	     <img  class="dati" src="img3/dari.png"/>
+  	 </div>
+  	 <div class="body3">
+      <img class="bobo" src="img3/bobo.png"/>
+      <img class="wuda" src="img3/wol.png"/>
+      <img  class="gogoog" src="img3/gogogo.png"/>
+      <img class="heima" src="img3/heima.png"/>
+        <img  class="guan" src="img3/sw.png"/>
+      <img  class="ko" src="img3/ko.png"/>
+    
+  	 </div>
+  	 <div class="body4">
+  	 	<div class="question">
+  	 		<div class="index"></div>
+  	 		<div class="answer">dfg</div>
+  	 	</div>
+  	 	<img  class="shan"  src="img3/s.png"/>
+  	  <div class="body4_a">
+  	   <div class="AA  body4_a1">fdg </div>
+  	  <div class="yes"></div>
+ 
+  	  </div>
+  	  <div class="body4_b">
+  	   <div class="AA  body4_b1">fg </div>
+  	   <div class="yes"></div>
+ 
+  	  </div>
+  	   <div class="body4_c">
+  	   <div class="AA  body4_c1">fg </div>
+  	   <div class="yes"></div>
+ 
+  	  </div>
+  	     <div class="body4_d">
+  	   <div class="AA  body4_d1">fg </div>
+  	   <div class="yes"></div>
+ 
+  	  </div>
+  	 
+  	 </div>
+  	 
+  	  <div class="body5">
+  	  	<img  class="ku" src="img3/ku.png"/>
+  	  	 <p class="sumcount ">你答对了<span class="spancount">0</span>题,得到了<span class="spancount">0</span>分</p>
+  	   <img class="again" src="img3/zaiwanyici.png"/>
+  	   <img class="help" src="img3/help.png"/>
+  	  </div>
+  	  <div class="body6">
+  	  	 <p class="sumcount bajisum">你答对了<span class="spancount">0</span>题,得到了<span class="spancount">0</span>分</p>
+  	   <img class="again1" src="img3/zaiwanyici.png"/>
+  	   <img class="bachou" src="img3/dianjichoujiang.png"/>
+  	   <img  class="dese" src="img3/dese.png"/>
+  	    <div class="bo"></div>
+  	    <img  class="baji" src="img3/baji.png"/>
+  	    <img   class="gongxi" src="img3/gongxi.png"/>
+  	    <div class="input">
+  	    <input  type="text" name="" id="" value="" />
+  	    <br />
+  	    <input  type="text" name="" id="" value="" />
+  	    	    <br />
+  	    <input  type="text" name="" id="" value="" />
+  	   </div>
+  	  </div>
+  	  <div class="body7">
+  	  	<img  class="zhongji" src="img3/gongxini.png"/>
+  	  	<img  class="again2" src="img3/zaiwanyici.png"/>
+  	  	<img class="dese1" src="img3/dese.png"/>
+  	  	<img  class="chou" src="img3/dianjichoujiang.png"/>
+  	  </div>
+  	  <div class="body8">
+  	  	<img class="you15" src="img3/youhuiquan15.png"/>
+  	  	<img class="again3" src="img3/zaiwanyici.png"/>
+  	  	<img class="dese2" src="img3/dese.png"/>
+  	  	<img class="chouW" src="img3/dianjichoujiang.png"/>
+  	  	<img class="bo1" src="img3/bo.png"/>
+  	  </div>
+  	  <div class="body9">
+  	  	<img  class="chou5" src="img3/youhuiquan5.png"/>
+  	  	<img class="again4" src="img3/zaiwanyici.png"/>
+  	  	<img class="dese3" src="img3/dese.png"/>
+  	  	<img class="chouW1" src="img3/dianjichoujiang.png"/>
+  	  	<img class="bo2" src="img3/bo.png"/>
+  	  	     
+  	  </div>
+  </div>
+	</body>
+	<script type="text/javascript">
+		var monkey=document.querySelector(".monkey1");
+		var idiv=document.querySelector(".isL")
+		var ibox=document.querySelector(".ibox");
+		var body1=document.querySelector(".body1");
+		var span=document.querySelector(".spanL")
+		var body2=document.querySelector(".body2")
+ 
+		
+		var timer;
+	    
+	  
+	    			timer = setInterval(function() {
+	    				
+					var iWidth = idiv.offsetWidth / ibox.offsetWidth * 100;
+					console.log(iWidth);
+					idiv.style.width = idiv.offsetWidth + 1 + 'px';
+					idiv.innerHTML = Math.round(iWidth) + "%";
+					if (iWidth == 100) {
+						span.innerText='加载成功'
+						clearInterval(timer);
+						body1.style.display="none"
+						
+						body2.style.display="block";
+						
+					}
+				}, 10);
+				
+				
+				var img1=document.querySelector(".img1");
+				var body3=document.querySelector(".body3")
+				img1.onclick=function(){
+					body2.style.display="none";
+					body3.style.display="block"
+				}
+				var go=document.querySelector(".gogoog")
+				var body4=document.querySelector(".body4")
+				 go.onclick=function(){
+				 		body3.style.display="none";
+				 	body4.style.display="block"
+				 }
+				
+			 var questionList = {
+
+    brand: [
+        {question: '“黑~芝麻糊~~~哎”,南方黑芝麻的经典广告片“叫卖篇”哪一年在电视上风靡全国？', answer:[["2046年",0],["1990年",0],["1991年",1],["1997年",0]],srcc:"pic22.png",icon:22},
+        {question: '“南方黑芝麻”品牌发源地在哪里呢？', answer:[["南极",0],["南山南",0],["广西南宁",0],["广西容县",1]],srcc:"pic23.png",icon:23},
+        {question: '听说我有很多缺点,请举个例子？', answer:[["太帅",0],["太高",0],["不举",1],["会扣篮",0]],srcc:"pic24.png",icon:24},
+        {question: '下面不属于黑芝麻功能特性的是？', answer:[["抗衰老",0],["提高生育能力",0],["黑头发",0],["得道成仙",1]],srcc:"pic25.png",icon:25},
+        {question: '100g黑芝麻的含钙量是100g牛奶含钙量的多少倍？', answer:[["100倍",0],["10倍",0],["7.5倍",1],["15倍",0]],srcc:"pic26.png",icon:26},
+        {question: '南方黑芝麻糊2015年的最新广告片“音乐篇”中，翩翩起舞的女主角身穿什么颜色的裙子呢？', answer:[["黑色",0],["黄色",1],["蓝色",0],["粉色",0]],srcc:"pic27.png",icon:27},
+        {question: '这是一道送分题，双12晚上，几点几分锁定浙江卫视可以看南到方黑芝麻糊冠名的《西游奇遇记》首播？', answer:[["20：20",1],["20：10",0],["20：00",0],["20：30",0]],srcc:"pic28.png",icon:28},
+        {question: '南方黑芝麻糊冠名的《西游奇遇记》里金星老师扮演的是？', answer:[["白龙马",0],["女儿国国王",0],["太白金星",1],["观音菩萨",0]],srcc:"pic29.png",icon:29},
+        {question: '南方黑芝麻糊冠名的《西游奇遇记》首站在哪里拍摄的？', answer:[["花果山",0],["西安",1],["火焰山",0],["北京",0]],srcc:"pic30.png",icon:30}
+    ],
+
+    xiyou: [
+        {question: '牛魔王的老婆“铁扇公主”又名？', answer:[["小甜甜",0],["红佛女",0],["药叉女",0],["罗刹女",1]],srcc:"pic1.png",icon:1},
+        {question: '八戒为什么长的像个猪？', answer:[["整容失败",0],["他本来就那模样",0],["投错了胎",1],["他喜欢猪，故意变成这样",0]],srcc:"pic2.png",icon:2},
+        {question: '玉皇大帝和王母娘娘到底什么关系？', answer:[["夫妻",0],["母子",0],["同事",1],["不清不楚的关系",0]],srcc:"pic3.png",icon:3},
+        {question: '黑熊精偷了唐僧的袈裟是为什么？', answer:[["别人的就是好的",0],["开生日趴体",1],["穿的拉轰、能泡妞",0],["金光闪闪，壕气",0]],srcc:"pic4.png",icon:4},
+        {question: '二郎神和玉帝是什么关系？', answer:[["父子",0],["叔侄",1],["基友",0],["蓝朋友",0]],srcc:"pic5.png",icon:5},
+        {question: '菩提始祖为什么轰走了孙悟空？', answer:[["猴子吃的太多",0],["猴子长的太帅",0],["猴子是逗逼",0],["猴子装逼",1]],srcc:"pic6.png",icon:6},
+        {question: '白龙马是谁的儿子？', answer:[["东海龙王",0],["南海龙王",0],["北海龙王",0],["西海龙王",1]],srcc:"pic7.png",icon:7},
+        {question: '通天河里的妖怪原本是观音菩萨池塘里的哪条鱼？', answer:[["鲤鱼",1],["鲶鱼",0],["金鱼",0],["金龙鱼",0]],srcc:"pic8.png",icon:8},
+        {question: '孙悟空师从何处？', answer:[["唐僧",0],["菩提老祖",1],["自学成才",0],["太白金星",0]],srcc:"pic9.png",icon:9},
+        {question: '西游记是谁写的？', answer:[["郑隆声",1],["吴奇隆",0],["吴孟达",0],["吴彦祖",0]],srcc:"pic10.png",icon:10},
+        {question: '原著中的孙悟空和下面哪个明星身高最接近？', answer:[["郭敬明",1],["隔壁老王",0],["何炅",0],["黄晓明",0]],srcc:"pic11.png",icon:11},
+        {question: '白龙马和被哪吒扒皮的龙三太子是什么关系？', answer:[["堂兄弟",1],["男朋友",0],["大舅舅",0],["好基友",0]],srcc:"pic12.png",icon:12},
+        {question: '当年是哪个妖精先谣言“吃唐僧肉可长生不老”？', answer:[["黑熊怪",0],["蛇精男",0],["狮驼洞三怪",0],["金角大王",1]],srcc:"pic13.png",icon:13},
+        {question: '要进盘丝洞，要先喊？', answer:[["傅文佩，你开门啊",0],["芝麻开门",1],["我是盘丝大仙",0],["妖精，哪里逃！",0]],srcc:"pic14.png",icon:14},
+        {question: '猪八戒前身“天蓬元帅”在天庭任什么职？', answer:[["总政少将",0],["陆军军委",0],["海军总司令",1],["志愿兵",0]],srcc:"pic15.png",icon:15},
+        {question: '红孩儿的真实年纪是？', answer:[["5岁",0],["300岁",1],["500岁",0],["100岁",0]],srcc:"pic16.png",icon:16},
+        {question: '孙悟空大闹蟠桃会，变成谁的样子骗吃骗喝？', answer:[["王母娘娘",0],["赤脚大仙",1],["太上老君",0],["太白金星",0]],srcc:"pic17.png",icon:17},
+        {question: '因为谁导致唐僧赶走孙悟空？', answer:[["孔雀公主",0],["白骨精",1],["狐狸精",0],["金鼻白毛鼠精",0]],srcc:"pic18.png",icon:18},
+        {question: '下列人物中没有喝过“孙、八、僧”三人组的圣水的是？', answer:[["虎力大仙",0],["鹿力大仙",0],["羊力大仙",0],["牛力大仙",1]],srcc:"pic19.png",icon:19},
+        {question: '第一个想娶唐僧的女妖怪是？', answer:[["凤姐",0],["琵琶精",1],["蝎子精",0],["玉兔精",0]],srcc:"pic20.png",icon:20},
+        {question: '太上老君的御用炼丹炉童子是？', answer:[["青狮魔王&白象魔王&大鹏魔王&虎威魔王",0],["奔波儿灞&灞波儿奔",0],["金角大王&银角大王",1],["辟寒大王&辟暑大王&辟尘大王",0]],srcc:"pic21.png",icon:21}
+
+    ]
+    
+
+}
+			 
+			console.log(questionList.brand[0].question);//拿到第一个问题
+//			console.log(questionList.brand[0].answer[2][1]);//拿到第一个answer
+			var t=questionList.brand[0].question;
+			var m=questionList.brand[0].answer;
+			console.log(m[0][0])
+			
+			var answer1=document.querySelector(".answer");
+
+		    var  answ;
+	    var das=document.querySelectorAll(".AA");
+		    var yes=document.querySelectorAll(".yes")
+		    var shan=document.querySelector(".shan");
+		    var  index=document.querySelector(".index")
+		    console.log(yes)
+		    var count=0;
+		    var sum=0;
+		    var time1,time2;
+		    var canclick=true;
+		  var sumspans=document.querySelectorAll(".spancount");
+		  var k=0;
+	      var Zr;
+		  chong();
+   
+		  function chong(){
+		  	
+		     Zr=[];
+		    	var Question=[];
+		    var rrd=GetIm_1(0,9,3);
+		    var rrD=GetIm_1(0,21,7);
+		    var Sr=GetIm_1(0,10,10);
+		    console.log(Sr)
+		 
+		      for(var i=0;i<rrd.length;i++){
+		     	  Question.push(questionList.brand[rrd[i]])
+		     }
+		     for(var i=0;i<rrD.length;i++){
+		     	Question.push(questionList.xiyou[rrD[i]])
+		     }console.log(Question)
+		   
+		     for(var i=0;i<Question.length;i++){
+		          Zr.push(Question[Sr[i]])
+		    	
+		    }
+		  }
+		      console.log(Zr)
+		     XX();
+		     function XX(){
+		     	 
+		     	 if(k<=9){
+		     	 	
+		     	  index.innerText=k+1;
+		     	  answer1.innerText=Zr[k].question;
+		     	  
+		     	  shan.src="icon_1-30/"+Zr[k].srcc;
+		     	  if(answer1.innerText.length>=20&&answer1.innerText.length<30){
+		     	answer1.style.fontSize="14px";
+		     		answer1.style.top="20px";
+		     	
+		     	}else if(answer1.innerText.length<=17){
+		     		answer1.style.fontSize="20px";
+		     		answer1.style.lineHeight="60px";
+		     		
+		     	}else if(answer1.innerText.length>18&&answer1.innerText.length<=25){
+		     			answer1.style.fontSize="20px";
+		     			answer1.style.lineHeight="20px";
+		     	}
+		     	  	     	else if(answer1.innerText.length>=26&&answer1.innerText.length<=40){
+		     		answer1.style.lineHeight="40px";
+		     		answer1.style.fontSize="10px";
+		     	}else if(answer1.innerText.length>40&&answer1.innerText.length<=50){
+		     			answer1.style.lineHeight="30px";
+		     		answer1.style.fontSize="10px";
+		     	} else if(answer1.innerText.length>50){
+		     				answer1.style.lineHeight="19px";
+		     		answer1.style.fontSize="10px";
+		     	}
+		     	   
+		     	  for(var i=0;i<das.length;i++){
+		     	  
+		     	  	 das[i].innerText=Zr[k].answer[i][0]
+		     	  	 	 if( das[i].innerText.length<=10){
+	          	 	das[i].style.fontSize="30px"
+	          	 }else if(das[i].innerText.length>10&&das[i].innerText.length<15){
+	          	 	das[i].style.fontSize="20px"
+	          	 }    
+	          	  else if(das[i].innerText.length>15&&das[i].innerText.length<20){
+	          	 	das[i].style.fontSize="10px"
+	          	 }    
+	          	 console.log(das[i].innerText.length)
+		     	  	 das[i].ze=i;
+		     	  for(var j=0;j<yes.length;j++){
+		  	  		yes[j].className="yes";
+		  	  	}
+		     	  	 das[i].onclick=function(){
+		     	  	 		if(canclick){
+		     	  	 	   canclick=false;
+		     	  	 	if(Zr[k].answer[this.ze][1]==1){
+		     	  	 		yes[this.ze].className="yes dui";
+	          			k++;
+	          			sum++;
+	          			count++;
+	          			 time1=setTimeout(function(){
+		  	   	  XX();
+		  	  	 	  canclick=true;
+		  	  	 	 clearInterval(time1);
+		  	  	 	   	  },1000)
+		     	 	
+		     	  	 	}
+		     	  	 	else{
+		     	  	 		yes[this.ze].className="yes cuo";
+		     	  	 		k++;
+	          			   sum++;
+	          			   
+	          			    time2=setTimeout(function(){
+		  	  	 	
+		  	  	 	  XX();
+		  	  	 	   canclick=true;
+		  	  	 	 clearInterval(time2);
+		  	  	 	   	  },1000)
+	          			   
+		     	  	 	}
+		     	  	 	
+		     	  	 	}
+		     	  	 }
+		     }
+		     	  	
+		     	  }
+		     	   	console.log(sum,count,k);
+		     	   	 	if(sum==10&&count<4){
+				    		for(var n=0;n<sumspans.length;n++){
+				    			 sumspans[n].innerText=count;
+				    		
+				    		}
+				    		 body4.style.display="none";
+				    			 body5.style.display="block";
+				  		
+				    	} 
+				   else if(sum==10&&count>=8){
+				    			for(var n=0;n<sumspans.length;n++){
+				    			 sumspans[n].innerText=count;
+				    		
+				    		}
+				    			body4.style.display="none";
+				    			 body6.style.display="block";
+				  	 
+				    	}
+				   else if(sum==10&&count>=4&&count<8){
+				   	for(var n=0;n<sumspans.length;n++){
+				    			 sumspans[n].innerText=count;
+				    		
+				    		}
+				     
+				   	     body4.style.display="none";
+				    			 body7.style.display="block";
+				   }
+		   	
+		     }
+		   
+	var body5=document.querySelector(".body5");
+	
+ 	var again=document.querySelector(".again");
+
+	again.onclick=function(){
+		 body4.style.display="block";
+		 body5.style.display="none";
+		 sum=0;
+		 count=0;
+		 k=0;
+		
+		   chong();
+		    XX();
+	
+      console.log(Zr)
+	}
+	var again1=document.querySelector(".again1")
+	var body6=document.querySelector(".body6")
+	again1.onclick=function(){
+		 body4.style.display="block";
+		 body6.style.display="none";
+		  sum=0;
+		 count=0;
+		  k=0;
+		   chong();
+		    XX();
+//		console.log()
+	}
+	
+	var again2=document.querySelector(".again2")
+	var  body7=document.querySelector(".body7");
+	  again2.onclick=function(){
+	  		 body4.style.display="block";
+		 body7.style.display="none";
+		  sum=0;
+		 count=0;
+		  k=0;
+		   chong();
+		    XX();
+     }
+	  var chou=document.querySelector(".chou");
+	  var again3=document.querySelector(".again3")
+	  var again4=document.querySelector(".again4")
+	  var body8=document.querySelector(".body8");
+	  var body9=document.querySelector(".body9");
+	  var bachou=document.querySelector(".bachou");
+	  var gongxi=document.querySelector(".gongxi");
+	  var inout=document.querySelector(".input")
+	  var td=getRand(0,2);
+console.log(td);
+	  chou.onclick=function(){
+	  	if(td==0){
+	  			body7.style.display="none";
+	    body8.style.display="block";
+	  	}else {
+	  		 	body7.style.display="none";
+	    body9.style.display="block";
+	  	}
+	  
+	  }
+		   again3.onclick=function(){
+		   	 body4.style.display="block";
+		   	 body8.style.display="none";
+		   	 	 sum=0;
+		         count=0;
+		        k=0;
+		
+		   chong();
+		    XX();
+		   	  
+		   }
+		   again4.onclick=function(){
+		   	 body4.style.display="block";
+		   	 body9.style.display="none";
+		   	 sum=0;
+		     count=0;
+		    k=0;
+		
+		   chong();
+		    XX();
+		  
+		   }
+		  
+		 bachou.onclick=function(){
+		 	gongxi.style.display="block"
+		 inout.style.display="block"
+		 }
+			
+			
+			function getRand(min,max){
+				return Math.floor(Math.random()*(max-min)+min)
+			}
+			  function GetIm_1(min,max,len){
+   	          	var arr=[];
+   	          	if(len>max-min){
+   	          		len=max-min
+   	          	}
+   	          	while(arr.length<len){
+   	          		var  one=true;
+   	          		var rd=Math.floor(Math.random()*(max-min)+min);
+   	          		for(var i=0;i<arr.length;i++){
+   	          			
+   	          			if(rd==arr[i]){
+   	          				one=false;
+   	          				break;
+   	          			}
+   	          		
+   	          		}
+   	          		
+   	          		if(one){
+   	          			arr.push(rd);
+   	          		}
+   	         
+   	          	}
+   	          	return arr;
+   	          
+   	          }
+	</script>
+</html>
